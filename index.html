@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <script src="https://cdn.tailwindcss.com"></script>
-        <body  class="grid grid-cols-2 w-11/12 mx-auto h-fit ">
+        <body  class="grid grid-row w-11/12 mx-auto h-fit mt-10 ">
         
          
                 
 
-                <div class="grid grid-cols border-2  border-gray-300 rounded-md mt-10 justify-items-center shadow-lg h-[600px] border-green-400 ">
-                    <div class="h-10 text-2xl font-semibold bg-green-400  w-full grid text-black grid justify-items-center">Inditity Care Form</div>
+                <div class="grid grid-cols border-2 w-6/12 mx-auto border-gray-300 rounded-md mt-5 justify-items-center shadow-lg h-fit border-green-400 ">
+                    <div class="h-10 text-2xl font-semibold bg-green-400  w-full grid text-black grid justify-items-center">Inditity Card Form</div>
     
                     <div class="grid grid-cols-2  h-fit p-10 gap-5 ">
                     <div class=" grid grid-cols">
@@ -35,44 +35,46 @@
                         <input type="text"  id="disc" name="lname" onchange="d_discr(this.value)" class="border-2 shadow-lg" placeholder=""/>
                         
                     </div>
-                    <input type="file" id="fileInput">
+                    <input type="file" id="img" onchange="i_img(this.files)">
                   
                   
                     <button class="border-green rounded-md p-3 w-fit h-fit grid justify-items-center bg-green-500 text-white " onclick="submit()"> Submit</utton>
            
                      </div>
                     </div>
-                <div class="border-2 border-blue-500 h-fit mt-40 ml-10 w-6/12 rounded-md shadow-lg  ">
-                    <div class="h-10 bg-blue-500  grid justify-items-center text-2xl font-semibold">IDENTITY CARD</div>
-                    <div class="my-5 px-5">
-                    <div><img src="p3.jpg.webp" class="w-24 h-24 ml-24 rounded-md border-2 border-black"/></div>
-                    <div class="mt-10 flex flex-col gap-2">
-                    <div class="grid grid-cols-2">
-                        <label class="">Full Name:</label>
-                        <p class="text-blue-500 border-black" id="fnameout"></p>
-                    </div>
-                    <div class="grid grid-cols-2 ">
-                        <label >Address:</label>
-                        <p class="text-blue-500 border-black" id="lnameout"></p>
-                    </div>
-                    <div class="grid grid-cols-2">
-                        <label >Email:</label>
-                        <p class="text-blue-500 border-black" id="emailout"></p>
-                    </div>
-                    <div class="grid grid-cols-2">
-                        <label >Contact:</label>
-                        <p class="text-blue-500 border-black" id="contactout"></p>
-                    </div>
-                    <div class="grid grid-cols-2">
-                        <label >Discription:</label>
-                        <p class="text-blue-500 border-black" id="discout"></p>
-                    </div>
-                  </div>
-                </div>
-            
-           
-                     </div>
-   
+   <div class=" grid grid-cols-3" id="showdisplay">
+    <!-- <div class="border-2 border-blue-500 h-fit mt-24 ml-10 w-3/12 rounded-md shadow-lg  ">
+        <div class="h-10 bg-blue-500  grid justify-items-center text-2xl font-semibold">IDENTITY CARD</div>
+        <div class="my-5 px-5">
+        <div><img src=${URL.createObjectURL(val.img)} class="w-24 h-24 ml-24 rounded-md border-2 border-black"/></div>
+        <div class="mt-10 flex flex-col gap-2">
+        <div class="grid grid-cols-2">
+            <label class="">Full Name:</label>
+            <p class="text-blue-500 border-black" id="fnameout">${val.fname}</p>
+        </div>
+        <div class="grid grid-cols-2 ">
+            <label >Address:</label>
+            <p class="text-blue-500 border-black" id="lnameout">${val.lname}</p>
+        </div>
+        <div class="grid grid-cols-2">
+            <label >Email:</label>
+            <p class="text-blue-500 border-black" id="emailout">${val.email}</p>
+        </div>
+        <div class="grid grid-cols-2">
+            <label >Contact:</label>
+            <p class="text-blue-500 border-black" id="contactout">${val.contact}</p>
+        </div>
+        <div class="grid grid-cols-2">
+            <label >Discription:</label>
+            <p class="text-blue-500 border-black" id="discout">${val.disc}</p>
+        </div>
+      </div>
+    </div> -->
+
+
+         </div>
+
+   </div>
 
         <script src="index.js"></script>
 
